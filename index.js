@@ -25,9 +25,14 @@ for (const name of paths) {
   const mod = require(name)
   mod(prog)
 }
+prog.on('command:*', function () {
+  prog.outputHelp()
+  process.exit(1)
+})
+
 prog.parse(process.argv)
 
-if (prog.args.length === 0 || !prog.args[prog.args.length - 1]._name) {
+if (!prog.args.length) {
   prog.outputHelp()
+  process.exit(1)
 }
-

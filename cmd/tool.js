@@ -1,5 +1,4 @@
 module.exports = function (prog) {
-
   prog
     .command('hello [msg]')
     .option('-n, --name <name>', 'show name', 'alice')

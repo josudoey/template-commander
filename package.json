@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/josudoey/template-commander#readme",
   "dependencies": {
-    "commander": "^2.11.0",
-    "globby": "^6.1.0"
+    "commander": "^2.20.0",
+    "globby": "^10.0.1"
   }
 }
